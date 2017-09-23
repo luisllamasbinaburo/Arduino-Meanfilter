@@ -1,7 +1,7 @@
 # Librería Arduino Mean Filter
 La librería Mean Filter implementa un filtro de media móvil. La librería almacena los N últimos elementos de la ventana y calcula la media. Se emplea un buffer circular para mantener la eficiencia alta.
 
-Más información https://www.luisllamas.es/libreria-arduino-quicksort/
+Más información https://www.luisllamas.es/libreria-arduino-mean-filter/
 
 ## Instrucciones de uso
 La clase Mean Filter emplea templates para permitir funcionar con distintos tipos (int, long, float,…). No obstante, hay que tener en cuenta que el filtro almacena N valores del tipo seleccionado, lo que puede causar desbordamiento si los valores filtrados y/o N son grandes. En este caso, hay que instanciar el filtro en un tipo de tamaño superior al de la señal filtrada (por ejemplo long para valores int).
